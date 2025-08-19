@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage{lato}
+% \usepackage{montserrat}
+% \usepackage{opensans}
+% \usepackage{ebgaramond}
+% \usepackage{libertine}
+\usepackage{palatino}
+% \usepackage{mathpazo}
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% Make sure to enter your actual profile URLs
+\begin{center}
+    \textbf{\Huge \scshape Vishwa Govula} \\ \vspace{1pt}
+    \small +91 9959888391 $|$ \href{mailto:vishwagovula07@gmail.com}{\underline{vishwagovula07@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/vishwa-govula-1b482a347/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/Wreck7}{\underline{GitHub}} $|$
+    \href{https://x.com/F1Vishwa}{\underline{Twitter (X)}}
+     $|$
+    \href{https://vishwa7.netlify.app/}{\underline{Portfolio}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+ \resumeSubHeadingListStart
+    \resumeItem{A passionate and motivated Computer Science student specializing in full-stack web development. Possesses a strong foundation in both front-end and back-end technologies, with hands-on experience building applications from concept to deployment. Eager to apply problem-solving skills and collaborate in a dynamic team to contribute to impactful, real-world projects.}
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University College of Science, Osmania University}{Hyderabad, Telangana}
+      {Bachelor of Science in Computer Science (Honors)}{2023 -- 2027 (Pursuing)}
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, HTML, CSS} \\
+     \textbf{Frameworks \& Libraries}{: ReactJS, NodeJS, ExpressJS, FastAPI, Streamlit, Tailwind CSS} \\
+     \textbf{Databases}{: MongoDB, PostgreSQL, Supabase} \\
+     \textbf{Developer Tools}{: Git, GitHub, VS Code, Postman, MS Office, AI Tools}
+    }}
+ \end{itemize}
+ 
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{CryptoSim - Crypto Simulator Webapp} $|$ \emph{FastAPI, Streamlit, Supabase, PostgreSQL}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack crypto trading simulator to provide users with a risk-free platform for practicing trading strategies.}
+            \resumeItem{Engineered a back-end with FastAPI to handle user authentication, real-time coin data, and transaction logic.}
+            \resumeItem{Designed a reactive front-end using Streamlit for intuitive data visualization, portfolio tracking, and trade execution.}
+            \resumeItem{Utilized Supabase with PostgreSQL for robust database management, ensuring persistent user data and portfolio states.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Wmusic - Web Music Player} $|$ \emph{HTML, CSS, JavaScript}}{}
+          \resumeItemListStart
+            \resumeItem{Built a responsive, front-end music player application with a focus on a clean user interface and interactive controls.}
+            \resumeItem{Implemented core player functionalities, including play, pause, skip, and track progress display using vanilla JavaScript.}
+            \resumeItem{Styled the application with modern CSS to ensure a seamless and visually appealing experience across various devices.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------STRENGTHS-----------
+\section{Strengths}
+    \resumeSubHeadingListStart
+        \resumeItem{\textbf{Collaboration:} Team player with excellent communication skills and a strong belief in collective success.}
+        \resumeItem{\textbf{Adaptability:} Quick learner with the ability to rapidly master new technologies and adapt to changing project requirements.}
+        \resumeItem{\textbf{Work Ethic:} Responsible, goal-oriented, and energetic with strong multi-tasking and observational skills.}
+    \resumeSubHeadingListEnd
+
+%-----------HOBBIES & INTERESTS-----------
+\section{Hobbies \& Interests}
+    \resumeSubHeadingListStart
+        \resumeItem{Exploring AI-enhanced coding techniques with tools like GitHub Copilot.}
+        \resumeItem{Sharing technical knowledge and solutions through blogging on Twitter.}
+        \resumeItem{Playing Cricket and Football, fostering teamwork and strategic thinking.}
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
