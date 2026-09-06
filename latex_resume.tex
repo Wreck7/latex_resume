@@ -8,7 +8,7 @@
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
-\usepackage[empty]{fullpage}
+\usepackage[top=0.6in, bottom=0.6in, left=0.6in, right=0.6in]{geometry}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
@@ -45,13 +45,6 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.1in}
-\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -148,7 +141,7 @@
      \textbf{Languages}{: Python, JavaScript, TypeScript, HTML, CSS, SQL} \\
      \textbf{Frameworks \& Libraries}{: ReactJS, NodeJS, ExpressJS, FastAPI, Streamlit, Jinja2, Tailwind CSS, BootStrap, Framer Motion, WebSockets} \\
      \textbf{Databases}{: MongoDB, Mongoose(ODM), PostgreSQL, Supabase, Firebase} \\
-     \textbf{Developer Tools}{: Git, GitHub, Postman}
+     \textbf{Developer Tools}{: Git, GitHub, Postman, Playwright}
     }}
  \end{itemize}
  
@@ -172,6 +165,17 @@
             \resumeItem{Built a no-code platform for creating and publishing responsive portfolio websites.}
             \resumeItem{Implemented dynamic UI components and animations for visually engaging, modern portfolio templates.}
             \resumeItem{Designed a scalable system architecture for seamless customization, real-time preview, and deployment.}
+          \resumeItemListEnd
+          
+          \resumeProjectHeading
+          {\textbf{WBlog - Full Stack Blogging Platform} $|$ \emph{React, Javascript, FastAPI, Python, Supabase
+}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack blogging platform that allows users to create, edit, publish, and manage blog posts.}
+            \resumeItem{Implemented secure user authentication and authorization using FastAPI and Supabase.}
+            \resumeItem{Built social engagement features including likes, comments, and user follow/unfollow functionality to enhance
+community interaction.}
+            \resumeItem{Designed and managed a PostgreSQL database for storing user profiles, blog content, and application data.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
